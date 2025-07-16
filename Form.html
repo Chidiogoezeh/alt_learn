@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <!--Forms enable collection of data from users in our html document, here we create\
+    interactive controls for submitting information for example a registration form -->
+    
+    <form> <!-- Form has labels for your input -->
+        <label for="name">Enter your name</label>
+        <input type="text"> <!-- Types of input include text, number, button, submit, email, color, file, password, radio, reset-->
+        name="name"
+        id="name"
+        required />
+        <input type="submit" value="Subscribe" />
+    </form>
+    <form>
+        <label for="pet select">Choose a pet</label>
+        <select name="pets" id="pet-select"></select> <!--Select is also a type of label which gives user different options to select from, for example gender-->
+            <option value="">Select Pet</option> 
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+    </form>
+</body>
+</html>
