@@ -9,7 +9,7 @@
 </head>
 <body>
     <section>
-        <h1>Learning Programming, starting with HTML</h1>
+        <h1 id="Learning">Learning Programming, starting with HTML</h1>
         <!--./ is used to easily locate the page you want displayed from your server to the viewer,\
         ../ is used to go back to the home page-->
         <a href="./index.html">Home</a>
@@ -23,7 +23,7 @@
    
     <!--Headings in HTML, These are used to indicate different text sizes in your web page i.e headings hold text amd inline elements but not block elements-->
     <section>
-        <h1>Header one</h1>
+        <h1 id="Header">Header one</h1> <!-- Reference to fragmrnt identifier-->
     </section>
     <section>
         <h2>Header two</h2>
@@ -63,5 +63,10 @@
 
     <!--How to embed audio or video in our html Page-->
     <a href="./Assets/Bob_Marley_Africa_Unite.mp3"controls> Bob Marley, Survival</a>
+
+    <!-- Fragment idetifier feature, to enable scrolling back to top of the page-->
+     <a href="#Header">Go to header</a> <!-- Here we call on the feature enabled in the header-->
+     <a href="#Learning">Go to Top</a>
+
     </body>
 </html>
