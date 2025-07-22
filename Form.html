@@ -9,20 +9,62 @@
     <!--Forms enable collection of data from users in our html document, here we create\
     interactive controls for submitting information for example a registration form -->
     
-    <form> <!-- Form has labels for your input -->
-        <label for="name">Enter your name</label>
-        <input type="text"> <!-- Types of input include text, number, button, submit, email, color, file, password, radio, reset-->
-        name="name"
-        id="name"
-        required
-        <input type="submit" value="Subscribe">
-    </form>
-    <form>
-        <label for="pet-select">Choose a pet</label>
-        <select name="pets" id="pet-select"></select> <!--Select is also a type of label which gives user different options to select from, for example gender-->
-            <option value="">Select Pet</option> 
-            <option value="dog">Dog</option>
-            <option value="cat">Cat</option>
-    </form>
+    <h2>Registration Form</h2>
+    <div id="Registration-Frorm">
+        <form action="">
+            <label for="first-name">First name</label>
+            <input type="text" name="First-Name" required>
+            <label for="last-name">Last name</label>
+            <input type="text" name="Last-Name" required>
+
+        <div>
+
+            <label for="gender-male">Male</label>
+            <input type="radio" name="gender-choice" value="choice-1">
+            
+            <label for="gender-female">Female</label>
+            <input type="radio" name="gender-choice" value="choice-2">
+
+            <label for="gender-other">Other</label>
+            <input type="radio" name="gender-choice" value="choice-3">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="xyz@xyzmail.com">
+
+             <label for="password">Password</label>
+            <input type="password" name="password">
+        </div>
+        <div>
+            <label for="Month">Birthday</label>
+            <select name="Month">
+                <option value="0" selected disabled>Month</option>
+                <option value="Jan">January</option>
+                <option value="Feb">February</option>
+                <option value="Mar">March</option>
+                <option value="Apr">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="Aug">August</option>
+                <option value="Sept">September</option>
+                <option value="Oct">October</option>
+                <option value="Nov">November</option>
+                <option value="Dec">December</option>
+            </select>
+        </div>
+        
+        <label for="agree">I agree to all the terms and condition of the form</label>
+        <input type="checkbox" name="agree">
+
+        <button type="submit">Submit</button>
+
+        </form>
+
+
+
+
+
+    </div>
 </body>
 </html>
