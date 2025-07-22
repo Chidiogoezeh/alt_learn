@@ -10,17 +10,17 @@
     interactive controls for submitting information for example a registration form -->
     
     <h2>Registration Form</h2>
-    <div id="Registration-Frorm">
+    <div id="Registration-Frorm"> <!--id is used and not for, in irder to adhere to html rules-->
         <form>
-            <label id="first-name">First name</label>
+            <label id="first-name">First name</label> 
             <input type="text" name="First-Name" required>
             <label id="last-name">Last name</label>
             <input type="text" name="Last-Name" required>
 
         <div>
 
-            <label id="gender-male">Male</label>
-            <input type="radio" name="gender-choice" value="choice-1">
+            <label id="gender-male">Male</label> <!--Diferent gender labels is used to differentiate beyween genders-->
+            <input type="radio" name="gender-choice" value="choice-1"> <!--type='radio' is used to enable choosing any option without affecting others-->
             
             <label id="gender-female">Female</label>
             <input type="radio" name="gender-choice" value="choice-2">
@@ -38,7 +38,7 @@
         <div>
             <label id="Month">Birthday</label>
             <select name="Month">
-                <option value="0" selected disabled>Month</option>
+                <option value="0" selected disabled>Month</option> <!--Selected disabled means that the option can't be selected-->
                 <option value="Jan">January</option>
                 <option value="Feb">February</option>
                 <option value="Mar">March</option>
@@ -60,11 +60,7 @@
         <button type="submit">Submit</button>
 
         </form>
-
-
-
-
-
+    
     </div>
 </body>
 </html>
