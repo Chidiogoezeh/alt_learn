@@ -1,12 +1,19 @@
 /* Here we use another method to denote the style in our html document */
+:root {
+    background-color: bisque;
+}
+
 html, body {
     font-size: medium;
     font-family: 'Times New Roman', Times, serif;
     padding: 0%;
     margin: 0%;
+    font: 200;
+    color: rgb(82, 4, 7);
 }
 
-header {
+/* You can add multiple element to give it one style*/
+.header, .footer {
     border-bottom: 1px blue;
     padding: 10px;
 }
@@ -20,4 +27,11 @@ img {
 /* Nav element is used to style navigation links */
 nav a {
     margin: 0, 10px;
+}
+
+/*You can decide to a specific tag within an element your desired style */
+
+h3, h2 {
+    color: rgb(40, 11, 53);
+    font-size: larger;
 }
