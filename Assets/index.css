@@ -1,0 +1,20 @@
+/* This is used for documentation*/
+p {
+    color: navy;
+    font-size: medium;
+    font-style: normal;
+}
+
+/* To give a specific paragraph needed style use id tag represented by # */
+#Learning {
+    color: blue;
+    font-size: large;
+    font-style: italic;
+}
+
+/* Class selector*/
+title {
+    font: bold;
+    font-size: larger;
+    font-weight: 400;
+}

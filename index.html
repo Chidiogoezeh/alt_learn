@@ -6,68 +6,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <link href="./Assets/index2.css"  rel="stylesheet"> <!-- Any style created here is used to style the entire document-->
 </head>
 <body>
-    
-    <div> <!-- This tag is used ti divide your web page into different parts-->
-        <header>This is the header</header> <!-- This is used to determune the beginning of the page-->
-    </div>
-   
-    <section>
-        <h1 id="Learning">Learning Programming, starting with HTML</h1>
+    <div>
         <!--./ is used to easily locate the page you want displayed from your server to the viewer,\
         ../ is used to go back to the home page-->
         <a href="./index.html">Home</a>
-        <a href="./about/index.html">About Page</a>
-    </section>
-    <!--Here we are learning how HTML, including comments work-->
-    <p>We are marching to the glorious city </br> we are matrching to the glorious song, where the saints and the ladies </br>where Jesus is messiah</p>
-    
-    <!--Display an image of people learning-->
-    <img src="./Assets/Learner1.png" alt="image howing students">
-   
-    <!--Headings in HTML, These are used to indicate different text sizes in your web page i.e headings hold text amd inline elements but not block elements-->
-    <section>
+        <a href="./about/index.html">About</a>
+    </div>
+
+    <div> <!-- This tag is used ti divide your web page into different parts-->
+        <header class="title" id="Learning">Learning Programming starting with HTML</header> <!-- This is used to determune the beginning of the page-->
+    </div>
+    <section> <!--Headings in HTML, These are used to indicate different text sizes in your web page i.e headings hold text amd inline elements but not block elements-->
         <h1 id="Header">Header one</h1> <!-- Reference to fragmrnt identifier-->
     </section>
+   
     <section>
-        <h2>Header two</h2>
+        <h3>Paragraph</h3>
+        <!--Here we are learning how HTML, including comments work-->
+        <p>We are marching to the glorious city we are matrching to the glorious song, where the saints and the ladieswhere Jesus is messiah</p>
+    </section>
+    
+    <section>
+        <h3>Display an image in html</h3>
+        <!--Display an image of people learning-->
+        <img src="./Assets/Learner1.png" alt="image howing students">
+    </section>
+    
+    <section>
+        <h2>Header two: Display a paragraph in html</h2>
+         <!--Paragragh in HTML is used in telling your story in a HTML document, paragraghs are block level elements and can not be contained in a heading-->
+        <p>Things we love to do have come to inclde writing programs</p>
+        <p>This does not mean we do not love other things, but it is surely a way for us to better express ourselfs</p>
         <p>Let me come</p>
         <p>Should I come with you</p>
     </section>
        
-    <!--Paragragh in HTML is used in telling your story in a HTML document, paragraghs are block level elements and can not be contained in a heading-->
-    <p>Things we love to do have come to inclde writing programs</p>
-    <p>This does not mean we do not love other things, but it is surely a way for us to better express ourselfs</p>
-
-    <!--Here we learn about list, from ordered list (ol) and unordered list (ul)-->
-    <!--Ordered list-->
     <section>
+        <h3>List in html</h3>
+        <!--Here we learn about list, from ordered list (ol) and unordered list (ul)-->
+        <!--Ordered list-->
         <p>Item catogory: ordered List (ol)</p>
         <ol>
             <li>Clothing</li>
             <li>Food</li>
         </ol>
-    </section>
-    <!--Unordered list-->
-    <section>
+        <!--Unordered list-->
         <p>Item category: unordered List (ol)</p>
         <ul>
             <li>Clothing</li>
             <li>Food</li>
         </ul>
     </section>
-
-    <!--To add a web link use a element, This is useful in navigating websites linked on a given wen page. href attribute stands for hypertext reference, its\
-    value is a link contained inside youir website-->
-    <a href="https://learn.altschoolafrica.com">Text</a>
+    <section>
+        <h3>Add a web link in html</h3>
+         <!--To add a web link use a element, This is useful in navigating websites linked on a given wen page. href attribute stands for hypertext reference, it's value is a link contained inside youir website-->
+        <a href="https://learn.altschoolafrica.com">Text</a>
+    </section>
 
     <!-- The download attribute allows you to download files from a webpage, these coild be images, files etc.\
      This carried ou with the a element-->
     <a href="./Assets/Learner2.png" download>Download Image</a>
 
     <!--How to embed audio or video in our html Page-->
-    <a href="./Assets/Bob_Marley_Africa_Unite.mp3"controls> Bob Marley, Survival</a>
+    <a href="./Assets/Bob_Marley_Africa_Unite.mp3"> Bob Marley, Survival</a>
 
     <!-- Fragment idetifier feature, to enable scrolling back to top of the page-->
      <a href="#Header">Go to header</a> <!-- Here we call on the feature enabled in the header-->

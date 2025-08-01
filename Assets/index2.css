@@ -1,0 +1,23 @@
+/* Here we use another method to denote the style in our html document */
+html, body {
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0%;
+    margin: 0%;
+}
+
+header {
+    border-bottom: 1px blue;
+    padding: 10px;
+}
+
+img {
+    padding: 10px 50px;
+    width: 300px;
+    height: 200px;
+}
+
+/* Nav element is used to style navigation links */
+nav a {
+    margin: 0, 10px;
+}
