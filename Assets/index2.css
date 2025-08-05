@@ -18,10 +18,10 @@ html, body {
     padding: 10px;
 }
 
-img {
+.img {
     padding: 10px 50px;
-    width: 300px;
-    height: 200px;
+    size: 50px;
+    border: 20px;
 }
 
 /* Nav element is used to style navigation links */
@@ -34,4 +34,18 @@ nav a {
 h3, h2 {
     color: rgb(40, 11, 53);
     font-size: larger;
+}
+
+/* Here we display grid setting, this can be used for columns or rows*/
+.grid {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 5px;
+    border: 20px;
+}
+
+.grid-cell_1, .grid-cell_2, .grid-cell_3 {
+    height: 50px;
+    width: 50px;
+    background-image: url(./Learner1.png);
 }
