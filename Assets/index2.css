@@ -1,6 +1,7 @@
 /* Here we use another method to denote the style in our html document */
 :root {
     background-color: bisque;
+    font: 20px;
 }
 
 html, body {
@@ -14,14 +15,9 @@ html, body {
 
 /* You can add multiple element to give it one style*/
 .header, .footer {
-    border-bottom: 1px blue;
+    border: 5px blue;
+    border-color: rgb(99, 49, 133);
     padding: 10px;
-}
-
-.img {
-    padding: 10px 50px;
-    size: 50px;
-    border: 20px;
 }
 
 /* Nav element is used to style navigation links */
@@ -34,6 +30,14 @@ nav a {
 h3, h2 {
     color: rgb(40, 11, 53);
     font-size: larger;
+    font-weight: bold;
+}
+
+img {
+    height: 400px;
+    width: 550px;
+    background: none;
+    padding: 0;
 }
 
 /* Here we display grid setting, this can be used for columns or rows*/
@@ -44,8 +48,33 @@ h3, h2 {
     border: 20px;
 }
 
-.grid-cell_1, .grid-cell_2, .grid-cell_3 {
+.grid-cell {
     height: 50px;
     width: 50px;
-    background-image: url(./Learner1.png);
+    border-color: rgb(232, 228, 237);
+    padding: 20px;
+    border: 1px;
+    background-image: url(./Learner2.png);
+}
+
+.flex {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5px;
+}
+
+.flex-cell {
+    height: 50px;
+    width: 50px;
+    border-color: rgb(232, 228, 237);
+    padding: 20px;
+    border: 1px;
+    background-image: url(./Learner2.png);
+}
+
+/* sTyling on mobile devices*/
+@media (max-width: 768px) {
+    .flex {
+        flex-direction: column;
+    }
 }
